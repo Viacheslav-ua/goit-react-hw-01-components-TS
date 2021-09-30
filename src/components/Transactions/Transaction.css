@@ -1,0 +1,27 @@
+.Transaction {
+  font-size: 22px;
+}
+
+.Transaction thead tr {
+  background-color: teal;
+  color: white;
+}
+
+.Transaction th {
+  width: 250px;
+  height: 40px;
+}
+
+.Transaction td {
+  padding-left: 40px;
+  text-align: justify;
+}
+
+.Transaction tr {
+  height: 40px;
+  background-color: white;
+}
+
+.Transaction tr:nth-child(2n) {
+  background-color: rgb(171, 189, 207);
+}

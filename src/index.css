@@ -1,0 +1,15 @@
+@import-normalize;
+
+body {
+  background-color: rgb(224, 217, 217);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

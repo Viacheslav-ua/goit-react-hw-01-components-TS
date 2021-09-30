@@ -1,0 +1,36 @@
+.Statistics {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.Statistics__list {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+}
+
+.Statistics__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: goldenrod;
+}
+
+.Statistics__item:nth-child(2n) {
+  background-color: cornflowerblue;
+}
+
+.Statistics__label {
+  color: white;
+  margin-top: 10px;
+}
+
+.Statistics__percentage {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+}
