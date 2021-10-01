@@ -1,5 +1,5 @@
 import defaultImg from "../../img/no-image.jpg";
-import "./Profile.css";
+import styles from "./Profile.module.css";
 
 interface ProfileInterface {
   name: string;
@@ -21,30 +21,30 @@ const Profile: React.FC<ProfileInterface> = ({
   stats,
 }) => {
   return (
-    <div className="Profile">
-      <div className="Profile__description">
+    <div className={styles.Profile}>
+      <div className={styles.Profile__description}>
         <img
           src={avatar}
           alt="Аватар пользователя"
-          className="Profile__avatar"
+          className={styles.Profile__avatar}
         />
-        <p className="Profile__name">{name}</p>
-        <p className="Profile__tag">@{tag}</p>
-        <p className="Profile__location">{location}</p>
+        <p className={styles.Profile__name}>{name}</p>
+        <p className={styles.Profile__tag}>@{tag}</p>
+        <p className={styles.Profile__location}>{location}</p>
       </div>
 
-      <ul className="Profile__stats">
-        <li className="Profile__item">
-          <span className="Profile__label">Followers</span>
-          <span className="Profile__quantity">{stats.followers}</span>
+      <ul className={styles.Profile__stats}>
+        <li className={styles.Profile__item}>
+          <span className={styles.Profile__label}>Followers</span>
+          <span className={styles.Profile__quantity}>{stats.followers}</span>
         </li>
-        <li className="Profile__item">
-          <span className="Profile__label">Views</span>
-          <span className="Profile__quantity">{stats.views}</span>
+        <li className={styles.Profile__item}>
+          <span className={styles.Profile__label}>Views</span>
+          <span className={styles.Profile__quantity}>{stats.views}</span>
         </li>
-        <li className="Profile__item">
-          <span className="Profile__label">Likes</span>
-          <span className="Profile__quantity">{stats.likes}</span>
+        <li className={styles.Profile__item}>
+          <span className={styles.Profile__label}>Likes</span>
+          <span className={styles.Profile__quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "./Profile/Profile";
+import Profile from "./Profile";
 import Statistics from "./Statistics/Statistics";
 import FriendList from "./Friends/FriendList";
 import Transactions from "./Transactions/Transactions";
